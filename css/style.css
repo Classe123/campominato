@@ -1,0 +1,48 @@
+:root{
+	--ms-primary-color-dark: #051e34;
+	--ms-box-dim: calc(500px / 10);
+}
+
+.cf-debug{
+	border: 1px solid red;
+}
+/* general */
+body{
+	font-family: 'Roboto', sans-serif;
+}
+header, footer{
+	height: 70px;
+	padding:5px;
+}
+main{
+	height: calc(100% - 140px);
+}
+#playground{
+	margin: 0 auto;
+	width:500px;
+	height:500px;
+	display: flex;
+	flex-flow: row wrap;
+}
+.box{
+  background-color: grey;
+  color: white;
+  width: var(--ms-box-dim);
+  height: var(--ms-box-dim);
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box.safe{
+	background-color: green;
+	color: white;          
+}
+.box.unsafe{
+	background-color: rgb(228, 20, 20);
+	color: black;
+}
+
+
+
+
